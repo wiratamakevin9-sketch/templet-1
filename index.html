@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================================
+         GANTI JUDUL & DESKRIPSI SEO DI SINI
+    ================================= -->
+    <title>Catatin — Aplikasi Catat Keuangan Pribadi & UMKM</title>
+    <meta name="description" content="Catatin membantu Anda mencatat pemasukan, mengatur budget, dan menabung lebih rutin. Gratis untuk Android, iOS, dan web.">
+    <meta name="theme-color" content="#3b82f6">
+
+    <!-- GANTI FAVICON DI SINI (bisa diganti dengan file .png / .ico milik Anda) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b82f6'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='18' fill='white'%3EC%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Dimuat di <head> (tanpa defer) agar tema diterapkan sebelum halaman tampil -->
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Lewati ke konten utama</a>
+
+    <!-- ================================
+         HEADER & NAVBAR
+    ================================= -->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Navigasi utama">
+            <!-- ================================
+                 GANTI NAMA WEBSITE & LOGO DI SINI
+            ================================= -->
+            <a href="#beranda" class="logo" aria-label="Catatin, kembali ke beranda">
+                <span class="logo__mark" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 7V6a2 2 0 0 1 2-2h10"/><circle cx="16" cy="13" r="1.2" fill="currentColor"/></svg>
+                </span>
+                <span>Catatin</span>
+            </a>
+
+            <!-- GANTI MENU NAVIGASI DI SINI -->
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#fitur" class="nav__link">Fitur</a></li>
+                <li><a href="#cara-kerja" class="nav__link">Cara Kerja</a></li>
+                <li><a href="#testimoni" class="nav__link">Testimoni</a></li>
+                <li><a href="#harga" class="nav__link">Harga</a></li>
+                <li><a href="#faq" class="nav__link">FAQ</a></li>
+                <li class="nav__menu-cta"><a href="#harga" class="btn btn--primary btn--block">Coba Gratis</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <button type="button" class="icon-btn theme-toggle" id="themeToggle" aria-label="Aktifkan mode gelap" aria-pressed="false">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                </button>
+                <a href="#harga" class="btn btn--primary btn--sm nav__cta">Coba Gratis</a>
+                <button type="button" class="icon-btn hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- ================================
+             HERO SECTION
+        ================================= -->
+        <section class="hero" id="beranda">
+            <div class="container hero__grid">
+                <div class="hero__content reveal">
+                    <p class="badge"><span class="badge__tag">BARU</span> Scan struk belanja otomatis</p>
+
+                    <!-- GANTI HERO TITLE DI SINI -->
+                    <h1 class="hero__title">Atur uang tanpa ribet, <span class="highlight">tahu ke mana setiap rupiah pergi.</span></h1>
+
+                    <!-- GANTI HERO DESCRIPTION DI SINI -->
+                    <p class="hero__desc">Catatin mencatat pemasukan dan pengeluaran Anda, memberi peringatan sebelum budget jebol, dan membantu Anda menabung lebih rutin setiap bulan.</p>
+
+                    <div class="hero__actions">
+                        <a href="#download" class="btn btn--primary">
+                            Download Gratis
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#cara-kerja" class="btn btn--outline">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg>
+                            Lihat Cara Kerja
+                        </a>
+                    </div>
+
+                    <!-- Social proof -->
+                    <div class="social-proof">
+                        <div class="avatars">
+                            <!-- GANTI URL GAMBAR AVATAR DI BAWAH DENGAN FOTO PENGGUNA ANDA -->
+                            <img src="https://placehold.co/80x80?text=RA" alt="Foto pengguna Rina" width="40" height="40">
+                            <img src="https://placehold.co/80x80?text=BS" alt="Foto pengguna Budi" width="40" height="40">
+                            <img src="https://placehold.co/80x80?text=DA" alt="Foto pengguna Dewi" width="40" height="40">
+                            <img src="https://placehold.co/80x80?text=AF" alt="Foto pengguna Arif" width="40" height="40">
+                        </div>
+                        <div>
+                            <div class="stars" role="img" aria-label="Rating 5 dari 5 bintang">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            </div>
+                            <p class="social-proof__text"><strong>4,9/5</strong> dari 12.000+ ulasan pengguna</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================================
+                     MOCKUP APLIKASI
+                     Dibuat dengan HTML & CSS. Untuk memakai screenshot asli,
+                     ganti seluruh <div class="phone">...</div> dengan:
+                     <img src="https://placehold.co/300x600?text=Screenshot+Aplikasi" alt="Tampilan aplikasi Catatin" width="300" height="600">
+                ================================= -->
+                <div class="hero__visual reveal" style="--delay: 150ms">
+                    <div class="phone" role="img" aria-label="Tampilan aplikasi Catatin: saldo Rp12.450.000, grafik pengeluaran mingguan, dan daftar transaksi terbaru">
+                        <div class="phone__screen" aria-hidden="true">
+                            <div class="app-top">
+                                <div>
+                                    <p class="app-greet">Selamat pagi,</p>
+                                    <p class="app-name">Rina</p>
+                                </div>
+                                <span class="app-avatar">RA</span>
+                            </div>
+                            <div class="app-balance">
+                                <p class="app-balance__label">Total Saldo</p>
+                                <p class="app-balance__value">Rp12.450.000</p>
+                                <p class="app-balance__meta">+Rp2,1 jt dibanding bulan lalu</p>
+                            </div>
+                            <div class="app-card">
+                                <div class="app-card__head"><span>Pengeluaran minggu ini</span><strong>Rp845rb</strong></div>
+                                <div class="chart">
+                                    <span class="chart__bar" style="--h: 45%"></span>
+                                    <span class="chart__bar" style="--h: 70%"></span>
+                                    <span class="chart__bar" style="--h: 35%"></span>
+                                    <span class="chart__bar is-active" style="--h: 90%"></span>
+                                    <span class="chart__bar" style="--h: 55%"></span>
+                                    <span class="chart__bar" style="--h: 75%"></span>
+                                    <span class="chart__bar" style="--h: 30%"></span>
+                                </div>
+                                <div class="chart__labels"><span>S</span><span>S</span><span>R</span><span>K</span><span>J</span><span>S</span><span>M</span></div>
+                            </div>
+                            <div class="app-list">
+                                <div class="tx">
+                                    <span class="tx__icon">MK</span>
+                                    <div class="tx__info"><p class="tx__name">Makan siang</p><p class="tx__cat">Makanan</p></div>
+                                    <p class="tx__amount">−Rp35.000</p>
+                                </div>
+                                <div class="tx">
+                                    <span class="tx__icon tx__icon--in">GJ</span>
+                                    <div class="tx__info"><p class="tx__name">Proyek desain</p><p class="tx__cat">Pemasukan</p></div>
+                                    <p class="tx__amount tx__amount--in">+Rp3,5 jt</p>
+                                </div>
+                                <div class="tx">
+                                    <span class="tx__icon">TR</span>
+                                    <div class="tx__info"><p class="tx__name">Ojek online</p><p class="tx__cat">Transportasi</p></div>
+                                    <p class="tx__amount">−Rp18.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="float-card float-card--left" aria-hidden="true">
+                        <span class="float-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                        <div><strong>Target tercapai!</strong><span>Dana darurat 100%</span></div>
+                    </div>
+                    <div class="float-card float-card--right" aria-hidden="true">
+                        <span class="float-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+                        <div><strong>Tagihan listrik</strong><span>Jatuh tempo 3 hari lagi</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             FEATURES SECTION
+        ================================= -->
+        <section class="section section--surface" id="fitur">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="eyebrow">Fitur</span>
+                    <h2 class="section__title">Semua yang Anda butuhkan untuk mengatur keuangan</h2>
+                    <p class="section__desc">Dirancang untuk karyawan, freelancer, dan pemilik usaha kecil yang ingin lebih disiplin tanpa harus paham akuntansi.</p>
+                </div>
+
+                <div class="features__grid">
+                    <!-- GANTI DATA FITUR DI SINI (ikon, judul, deskripsi) -->
+                    <article class="card feature reveal">
+                        <div class="feature__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+                        <h3 class="feature__title">Scan struk otomatis</h3>
+                        <p class="feature__desc">Foto struk belanja, nominal dan kategorinya langsung tercatat. Tidak perlu mengetik satu per satu.</p>
+                    </article>
+                    <article class="card feature reveal" style="--delay: 80ms">
+                        <div class="feature__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12A9 9 0 1 1 12 3v9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/></svg></div>
+                        <h3 class="feature__title">Budget per kategori</h3>
+                        <p class="feature__desc">Tentukan batas belanja untuk makan, transportasi, atau hiburan. Anda diberi tahu sebelum batasnya terlewati.</p>
+                    </article>
+                    <article class="card feature reveal" style="--delay: 160ms">
+                        <div class="feature__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div>
+                        <h3 class="feature__title">Laporan yang mudah dibaca</h3>
+                        <p class="feature__desc">Grafik mingguan dan bulanan menunjukkan pola pengeluaran Anda. Bisa diekspor ke PDF atau Excel.</p>
+                    </article>
+                    <article class="card feature reveal">
+                        <div class="feature__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+                        <h3 class="feature__title">Pengingat tagihan</h3>
+                        <p class="feature__desc">Listrik, internet, cicilan, sampai BPJS. Notifikasi dikirim beberapa hari sebelum jatuh tempo.</p>
+                    </article>
+                    <article class="card feature reveal" style="--delay: 80ms">
+                        <div class="feature__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+                        <h3 class="feature__title">Target tabungan</h3>
+                        <p class="feature__desc">Buat target seperti dana darurat atau liburan, lalu pantau progresnya dengan persentase yang jelas.</p>
+                    </article>
+                    <article class="card feature reveal" style="--delay: 160ms">
+                        <div class="feature__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+                        <h3 class="feature__title">Aman & privat</h3>
+                        <p class="feature__desc">Data dienkripsi dan dilindungi PIN atau sidik jari. Kami tidak pernah meminta password rekening bank Anda.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             HOW IT WORKS
+        ================================= -->
+        <section class="section" id="cara-kerja">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="eyebrow">Cara Kerja</span>
+                    <h2 class="section__title">Mulai dalam 3 langkah sederhana</h2>
+                    <p class="section__desc">Tidak perlu setup rumit. Kebanyakan pengguna sudah mencatat transaksi pertama dalam 2 menit.</p>
+                </div>
+
+                <div class="steps">
+                    <div class="step reveal">
+                        <div class="step__number" aria-hidden="true">1</div>
+                        <h3 class="step__title">Unduh & daftar</h3>
+                        <p class="step__desc">Pasang aplikasi dari Play Store atau App Store, lalu daftar dengan email atau nomor HP.</p>
+                    </div>
+                    <div class="step reveal" style="--delay: 120ms">
+                        <div class="step__number" aria-hidden="true">2</div>
+                        <h3 class="step__title">Atur dompet & budget</h3>
+                        <p class="step__desc">Tambahkan dompet seperti rekening, e-wallet, dan kas tunai, lalu tentukan budget bulanan.</p>
+                    </div>
+                    <div class="step reveal" style="--delay: 240ms">
+                        <div class="step__number" aria-hidden="true">3</div>
+                        <h3 class="step__title">Catat & pantau</h3>
+                        <p class="step__desc">Catat transaksi harian atau scan struk. Laporan dan insight tersusun otomatis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             STATISTICS / SOCIAL PROOF
+             GANTI ANGKA STATISTIK: ubah data-count, data-decimals, dan data-suffix
+             (teks di dalam elemen dipakai jika JavaScript tidak aktif)
+        ================================= -->
+        <section class="stats-section" aria-label="Statistik Catatin">
+            <div class="container">
+                <div class="stats reveal">
+                    <div class="stat">
+                        <p class="stat__value" data-count="250" data-suffix="rb+">250rb+</p>
+                        <p class="stat__label">Pengguna aktif</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat__value" data-count="4.9" data-decimals="1" data-suffix="/5">4,9/5</p>
+                        <p class="stat__label">Rating aplikasi</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat__value" data-count="18" data-suffix=" jt+">18 jt+</p>
+                        <p class="stat__label">Transaksi tercatat</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat__value" data-count="32" data-suffix="%">32%</p>
+                        <p class="stat__label">Rata-rata tabungan naik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             TESTIMONIALS
+        ================================= -->
+        <section class="section section--surface" id="testimoni">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="eyebrow">Testimoni</span>
+                    <h2 class="section__title">Cerita dari pengguna Catatin</h2>
+                    <p class="section__desc">Dari freelancer sampai pemilik kedai kopi, mereka kini lebih tenang soal keuangan.</p>
+                </div>
+
+                <div class="testimonials__grid">
+                    <!-- ================================
+                         GANTI DATA TESTIMONIAL DI SINI
+                    ================================= -->
+                    <article class="card testimonial reveal">
+                        <div class="stars" role="img" aria-label="Rating 5 dari 5 bintang">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                        </div>
+                        <p class="testimonial__text">"Dulu saya selalu bingung kenapa saldo habis sebelum akhir bulan. Setelah tiga bulan pakai Catatin, akhirnya saya bisa menyisihkan 20% penghasilan secara rutin."</p>
+                        <div class="testimonial__author">
+                            <!-- GANTI URL GAMBAR DI BAWAH DENGAN FOTO ASLI -->
+                            <img src="https://placehold.co/96x96?text=RA" alt="Foto Rina Ayu Lestari" width="48" height="48" loading="lazy">
+                            <div>
+                                <p class="testimonial__name">Rina Ayu Lestari</p>
+                                <p class="testimonial__role">Freelance Desainer Grafis</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card testimonial reveal" style="--delay: 100ms">
+                        <div class="stars" role="img" aria-label="Rating 5 dari 5 bintang">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                        </div>
+                        <p class="testimonial__text">"Fitur pisah dompet pribadi dan usaha sangat membantu. Laporan bulanan tinggal diekspor ke PDF, tidak perlu rekap manual di Excel tiap akhir bulan."</p>
+                        <div class="testimonial__author">
+                            <img src="https://placehold.co/96x96?text=BS" alt="Foto Budi Santoso" width="48" height="48" loading="lazy">
+                            <div>
+                                <p class="testimonial__name">Budi Santoso</p>
+                                <p class="testimonial__role">Pemilik Kedai Kopi Sudut</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card testimonial reveal" style="--delay: 200ms">
+                        <div class="stars" role="img" aria-label="Rating 5 dari 5 bintang">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                        </div>
+                        <p class="testimonial__text">"Pengingat tagihannya menyelamatkan saya dari denda telat bayar. Tampilannya juga sederhana, jadi suami saya yang jarang pakai aplikasi pun langsung paham."</p>
+                        <div class="testimonial__author">
+                            <img src="https://placehold.co/96x96?text=DA" alt="Foto Dewi Anggraini" width="48" height="48" loading="lazy">
+                            <div>
+                                <p class="testimonial__name">Dewi Anggraini</p>
+                                <p class="testimonial__role">Staf HR, Ibu Dua Anak</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             PRICING
+        ================================= -->
+        <section class="section" id="harga">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="eyebrow">Harga</span>
+                    <h2 class="section__title">Pilih paket yang sesuai kebutuhan</h2>
+                    <p class="section__desc">Mulai gratis, upgrade kapan saja. Semua paket berbayar bisa dicoba 14 hari tanpa biaya.</p>
+                    <div class="billing-toggle" role="group" aria-label="Periode tagihan">
+                        <button type="button" class="billing-toggle__btn is-active" data-billing="monthly" aria-pressed="true">Bulanan</button>
+                        <button type="button" class="billing-toggle__btn" data-billing="yearly" aria-pressed="false">Tahunan <span class="billing-toggle__save">Hemat 20%</span></button>
+                    </div>
+                </div>
+
+                <!-- ================================
+                     GANTI HARGA DI SINI
+                     data-monthly = harga per bulan (paket bulanan)
+                     data-yearly  = harga per bulan jika bayar tahunan
+                ================================= -->
+                <div class="pricing__grid">
+                    <article class="card plan reveal">
+                        <h3 class="plan__name">Gratis</h3>
+                        <p class="plan__desc">Untuk mulai membangun kebiasaan mencatat.</p>
+                        <p class="plan__price">
+                            <span class="plan__price-value" data-monthly="0" data-yearly="0">Rp0</span>
+                            <span class="plan__period">/bulan</span>
+                        </p>
+                        <p class="plan__note" data-note-monthly="Gratis selamanya, tanpa kartu kredit" data-note-yearly="Gratis selamanya, tanpa kartu kredit">Gratis selamanya, tanpa kartu kredit</p>
+                        <ul class="plan__features">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Hingga 100 transaksi per bulan</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>2 dompet</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Laporan bulanan dasar</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1 perangkat</li>
+                        </ul>
+                        <a href="#download" class="btn btn--outline btn--block">Mulai Gratis</a>
+                    </article>
+
+                    <article class="card plan plan--featured reveal" style="--delay: 100ms">
+                        <span class="plan__label">Paling Populer</span>
+                        <h3 class="plan__name">Pro</h3>
+                        <p class="plan__desc">Untuk individu yang serius menabung.</p>
+                        <p class="plan__price">
+                            <span class="plan__price-value" data-monthly="29000" data-yearly="23000">Rp29.000</span>
+                            <span class="plan__period">/bulan</span>
+                        </p>
+                        <p class="plan__note" data-note-monthly="Ditagih bulanan, batalkan kapan saja" data-note-yearly="Ditagih Rp276.000 per tahun">Ditagih bulanan, batalkan kapan saja</p>
+                        <ul class="plan__features">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Transaksi & dompet tanpa batas</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Scan struk otomatis</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Budget & pengingat tagihan</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Ekspor laporan PDF & Excel</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sinkron di semua perangkat</li>
+                        </ul>
+                        <a href="#download" class="btn btn--primary btn--block" data-toast="Paket Pro dipilih. Uji coba 14 hari gratis sudah siap!">Coba Pro 14 Hari Gratis</a>
+                    </article>
+
+                    <article class="card plan reveal" style="--delay: 200ms">
+                        <h3 class="plan__name">Bisnis</h3>
+                        <p class="plan__desc">Untuk UMKM dan tim kecil.</p>
+                        <p class="plan__price">
+                            <span class="plan__price-value" data-monthly="79000" data-yearly="63000">Rp79.000</span>
+                            <span class="plan__period">/bulan</span>
+                        </p>
+                        <p class="plan__note" data-note-monthly="Ditagih bulanan, batalkan kapan saja" data-note-yearly="Ditagih Rp756.000 per tahun">Ditagih bulanan, batalkan kapan saja</p>
+                        <ul class="plan__features">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Semua fitur Pro</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Pisah keuangan pribadi & usaha</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Hingga 5 anggota tim</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Laporan laba rugi otomatis</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Dukungan prioritas via WhatsApp</li>
+                        </ul>
+                        <a href="#download" class="btn btn--outline btn--block" data-toast="Paket Bisnis dipilih. Tim kami akan menghubungi Anda.">Pilih Bisnis</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             FAQ
+        ================================= -->
+        <section class="section section--surface" id="faq">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="eyebrow">FAQ</span>
+                    <h2 class="section__title">Pertanyaan yang sering ditanyakan</h2>
+                    <p class="section__desc">Belum menemukan jawabannya? Hubungi kami lewat WhatsApp atau email di bagian bawah halaman.</p>
+                </div>
+
+                <!-- GANTI PERTANYAAN & JAWABAN FAQ DI SINI -->
+                <div class="faq reveal">
+                    <div class="faq__item">
+                        <h3>
+                            <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
+                                Apakah Catatin benar-benar gratis?
+                                <span class="faq__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-1" role="region" aria-labelledby="faq-btn-1">
+                            <div class="faq__answer-inner"><p>Ya. Paket Gratis bisa dipakai selamanya tanpa batas waktu dan tanpa kartu kredit. Anda baru perlu upgrade jika membutuhkan fitur seperti scan struk, ekspor laporan, atau transaksi tanpa batas.</p></div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <h3>
+                            <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
+                                Apakah data keuangan saya aman?
+                                <span class="faq__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-2" role="region" aria-labelledby="faq-btn-2">
+                            <div class="faq__answer-inner"><p>Data Anda dienkripsi saat dikirim maupun saat disimpan. Kami tidak menjual data ke pihak ketiga dan tidak pernah meminta PIN atau password rekening bank Anda.</p></div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <h3>
+                            <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
+                                Bisakah dipakai di beberapa perangkat?
+                                <span class="faq__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-3" role="region" aria-labelledby="faq-btn-3">
+                            <div class="faq__answer-inner"><p>Bisa. Catatin tersedia di Android, iOS, dan browser. Pada paket Pro dan Bisnis, data tersinkron otomatis di semua perangkat yang memakai akun yang sama.</p></div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <h3>
+                            <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
+                                Bagaimana cara membatalkan langganan?
+                                <span class="faq__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-4" role="region" aria-labelledby="faq-btn-4">
+                            <div class="faq__answer-inner"><p>Buka Pengaturan, pilih Langganan, lalu ketuk Batalkan. Akun otomatis kembali ke paket Gratis di akhir periode tagihan, dan semua data Anda tetap tersimpan.</p></div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <h3>
+                            <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
+                                Apakah cocok untuk pencatatan usaha kecil?
+                                <span class="faq__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-5" role="region" aria-labelledby="faq-btn-5">
+                            <div class="faq__answer-inner"><p>Sangat cocok. Paket Bisnis memisahkan keuangan pribadi dan usaha, mendukung beberapa anggota tim, dan menyusun laporan laba rugi sederhana setiap bulan.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             CTA SECTION
+        ================================= -->
+        <section class="section" id="download">
+            <div class="container">
+                <div class="cta reveal">
+                    <h2 class="cta__title">Siap mulai mengatur keuangan?</h2>
+                    <p class="cta__desc">Bergabung dengan 250 ribu lebih pengguna yang sudah lebih tenang menghadapi akhir bulan. Gratis, tanpa kartu kredit.</p>
+                    <div class="cta__actions">
+                        <!-- ================================
+                             GANTI LINK DOWNLOAD APLIKASI DI SINI
+                             Ganti href="#" dengan link Play Store / App Store,
+                             lalu hapus atribut data-toast
+                        ================================= -->
+                        <a href="#" class="btn btn--light" data-toast="Link Android akan segera tersedia.">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                            Unduh untuk Android
+                        </a>
+                        <a href="#" class="btn btn--ghost-light" data-toast="Link iOS akan segera tersedia.">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                            Unduh untuk iOS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#beranda" class="logo" aria-label="Catatin, kembali ke beranda">
+                        <span class="logo__mark" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 7V6a2 2 0 0 1 2-2h10"/><circle cx="16" cy="13" r="1.2" fill="currentColor"/></svg>
+                        </span>
+                        <span>Catatin</span>
+                    </a>
+                    <p class="footer__about">Aplikasi pencatat keuangan untuk individu dan UMKM Indonesia. Sederhana, aman, dan dibuat untuk dipakai setiap hari.</p>
+
+                    <!-- ================================
+                         GANTI EMAIL, WHATSAPP & ALAMAT DI SINI
+                         Format WhatsApp: https://wa.me/62xxxxxxxxxx (tanpa 0 dan tanda +)
+                    ================================= -->
+                    <address class="footer__contact">
+                        <a href="mailto:halo@catatin.id">halo@catatin.id</a>
+                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp: +62 812-3456-7890</a>
+                        <span>Jl. Contoh Raya No. 123, Jakarta Selatan</span>
+                    </address>
+
+                    <!-- ================================
+                         GANTI LINK SOCIAL MEDIA DI SINI
+                    ================================= -->
+                    <div class="socials">
+                        <a href="https://instagram.com/" class="icon-btn" aria-label="Instagram Catatin" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+                        </a>
+                        <a href="https://tiktok.com/" class="icon-btn" aria-label="TikTok Catatin" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V3c.5 2.5 2.5 4.5 5 5"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/" class="icon-btn" aria-label="LinkedIn Catatin" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-7M12 13a3 3 0 0 1 6 0v4"/></svg>
+                        </a>
+                        <a href="https://youtube.com/" class="icon-btn" aria-label="YouTube Catatin" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav aria-label="Produk">
+                    <h3 class="footer__title">Produk</h3>
+                    <ul class="footer__links">
+                        <li><a href="#fitur">Fitur</a></li>
+                        <li><a href="#harga">Harga</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#testimoni">Testimoni</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Perusahaan">
+                    <h3 class="footer__title">Perusahaan</h3>
+                    <ul class="footer__links">
+                        <li><a href="#beranda">Tentang Kami</a></li>
+                        <li><a href="#beranda">Karier</a></li>
+                        <li><a href="#beranda">Blog</a></li>
+                        <li><a href="#beranda">Kontak</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Bantuan">
+                    <h3 class="footer__title">Bantuan</h3>
+                    <ul class="footer__links">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#beranda">Pusat Bantuan</a></li>
+                        <li><a href="#beranda">Kebijakan Privasi</a></li>
+                        <li><a href="#beranda">Syarat & Ketentuan</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="year">2026</span> Catatin. Semua hak dilindungi.</p>
+                <p>Dibuat dengan HTML, CSS & JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tombol kembali ke atas -->
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <!-- Toast notifikasi -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+        <span id="toastMessage"></span>
+    </div>
+</body>
+</html>
